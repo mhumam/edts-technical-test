@@ -1,1 +1,3 @@
-# edts-technical-test
+# edts-frontend
+
+EDTS Technical Test - Frontend.
