@@ -27,7 +27,7 @@ class App extends React.Component {
 					<div className="site-layout-background" style={{ padding: 24, paddingTop: 0, minHeight: 380 }}>
 						<Switch>
 							<Route exact path='/' render={() => <HomeComponent/>} />
-							<Route exact path='/post/:userid' render={() => <PostComponent/>} />
+							<Route exact path='/post/:userid' render={(props) => <PostComponent {...props}/>} />
 						</Switch>
 					</div>
 				</Content>
