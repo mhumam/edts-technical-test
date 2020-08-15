@@ -8,6 +8,7 @@
 
 import React from 'react';
 import { List, Card } from 'antd';
+import { Link } from 'react-router-dom';
 import { EyeOutlined } from '@ant-design/icons';
 import { getRequest } from '../utilities/RequestService';
 import { api } from '../config/Endpoint';
@@ -42,6 +43,7 @@ class App extends React.Component {
 
     render() {
         const { albumList, isLoading } = this.state;
+        const userId = this.props.userId;
         return (
             <List
                 loading={isLoading}
@@ -51,7 +53,7 @@ class App extends React.Component {
                 renderItem={item => (
                     <Card
                         cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
-                        actions={[<span><EyeOutlined key="View" /> View</span>]}
+                        actions={[<Link to={"/albums/" + userId + "/photos/" + item.id}><EyeOutlined key="View" /> View Photos</Link>]}
                         style={{ margin: '10px' }}
                         className="card-shadow"
                     >
