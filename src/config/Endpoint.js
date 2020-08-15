@@ -18,6 +18,9 @@ export const api = {
         },
         albums: {
             list: endpoint + "albums"
+        },
+        photos: {
+            list: endpoint + "photos"
         }
     }
 }
