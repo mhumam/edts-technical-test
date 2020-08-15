@@ -11,6 +11,7 @@ import { Layout } from 'antd';
 import { Route, Switch } from 'react-router-dom';
 import HomeComponent from './pages/Home/Index';
 import PostComponent from './pages/Post/Index';
+import AlbumsComponent from './pages/Albums/Index';
 import 'antd/dist/antd.css';
 import './App.css';
 
@@ -28,6 +29,7 @@ class App extends React.Component {
 						<Switch>
 							<Route exact path='/' render={() => <HomeComponent/>} />
 							<Route exact path='/post/:userid' render={(props) => <PostComponent {...props}/>} />
+							<Route exact path='/albums/:userid' render={(props) => <AlbumsComponent {...props}/>} />
 						</Switch>
 					</div>
 				</Content>
