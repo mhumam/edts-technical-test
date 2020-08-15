@@ -51,7 +51,7 @@ class App extends React.Component {
                                     <Button type="primary">View Post</Button>
                                 </Link>
                                 &nbsp;
-                                <Link to={"/album/" + id}>
+                                <Link to={"/albums/" + id}>
                                     <Button type="primary">View Album</Button>
                                 </Link>
                             </Row>
