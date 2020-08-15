@@ -12,6 +12,9 @@ export const api = {
     url: {
         users: {
             list: endpoint + "users"
+        },
+        posts: {
+            list: endpoint + "posts"
         }
     }
 }

@@ -20,7 +20,7 @@ class App extends React.Component {
         phone = (phone) ? phone : '-';
 
         return (
-            <Row style={{ margin: '20px' }}>
+            <Row style={{ margin: '20px 0' }}>
                 <Col span={24}>
                     <Card size="small" title={name} style={{ width: "100%" }} className="card-shadow">
                         <Form layout="vertical">
