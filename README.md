@@ -1,12 +1,21 @@
 <p align="center">
   <a href="https://edts-humam.herokuapp.com/">
-    <img width="200" src="https://edts-humam.herokuapp.com/images/edts-logo.png">
+    <img width="200" src="./public/images/edts-logo.png">
   </a>
 </p>
 
 
 <h1 align="center">Social Media - EDTS Technical Test</h1>
 <h4 align="center">Muhamad Humam | muhamadhumamm17@gmail.com</h4>
+
+## Preview:
+
+<p align="center">
+  <a href="https://edts-humam.herokuapp.com/">
+    <img src="./public/images/preview.png">
+  </a>
+</p>
+
 
 ## Description:
 
