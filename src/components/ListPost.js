@@ -7,7 +7,6 @@
  */
 
 import React from 'react';
-import uuid from 'react-uuid';
 import { List, Space, Row, Button, Popconfirm, Modal, Form } from 'antd';
 import { Link } from 'react-router-dom';
 import { MessageOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
@@ -80,7 +79,7 @@ class App extends React.Component {
         const userId = this.props.userId;
         /* mapping data, add userId and id (random format) */
         data.userId = (userId) ? Number.parseInt(userId, 0) : null;
-        data.id = uuid();
+        data.id = Math.random(); //generate id random
 
         /* push data to postList */
         await postList.push(data);
@@ -88,6 +87,7 @@ class App extends React.Component {
         /* show notification */
         Alert.success("Create data has been successful");
 
+        console.log("postList", postList)
         await this.setState({ postList });
         await this.handleCloseModal();
     }
