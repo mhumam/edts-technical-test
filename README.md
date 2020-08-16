@@ -1,13 +1,19 @@
-# Social Media - EDTS Technical Test
+<p align="center">
+  <a href="https://edts-humam.herokuapp.com/">
+    <img width="200" src="https://edts-humam.herokuapp.com/images/edts-logo.png">
+  </a>
+</p>
 
-#### Description:
+
+<h1 align="center">Social Media - EDTS Technical Test</h1>
+<h4 align="center">Muhamad Humam | muhamadhumamm17@gmail.com</h4>
+
+## Description:
 
 The application used to display post data from social media is based on data from https://jsonplaceholder.typicode.com/
 This application is built using Reactjs, AntDesign, Javascript, CSS
 
 ## Installation and Setup Instructions
-
-#### Example:  
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
@@ -26,3 +32,13 @@ To Start Server:
 To Visit App:
 
 `localhost:3000` 
+
+## Features
+
+- List User
+- List, Create, Update and Delete Post
+- List, Create, Update and Delete Comment
+- List Albums
+- View Detail Albums
+- List Photos
+- View Detail Photos
