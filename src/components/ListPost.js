@@ -90,7 +90,6 @@ class App extends React.Component {
         /* show notification */
         Alert.success("Create data has been successful");
 
-        console.log("postList", postList)
         await this.setState({ postList });
         await this.handleCloseModal();
     }
