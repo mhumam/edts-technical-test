@@ -8,7 +8,8 @@
 
 import React from 'react';
 import { List, Space } from 'antd';
-import { MessageOutlined, EyeOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+import { MessageOutlined } from '@ant-design/icons';
 import { getRequest } from '../utilities/RequestService';
 import { api } from '../config/Endpoint';
 
@@ -44,9 +45,10 @@ class App extends React.Component {
         /* call service */
         await getRequest(url, callback);
     }
-    
+
     render() {
         const { postList, isLoading } = this.state;
+        const userId = this.props.userId;
         return (
             <List
                 loading={isLoading}
@@ -55,8 +57,7 @@ class App extends React.Component {
                 dataSource={postList}
                 renderItem={item => (
                     <List.Item actions={[
-                        <a key="list-loadmore-edit"><IconText icon={EyeOutlined} text="Detail" key="list-vertical-message" /></a>,
-                        <a key="list-loadmore-edit"><IconText icon={MessageOutlined} text="Comment" key="list-vertical-message" /></a>
+                        <Link to={"/post/" + userId + "/comment/" + item.id}><IconText icon={MessageOutlined} text="Comment" key="list-vertical-message" /></Link>
                     ]}
                         className="card-shadow" style={{ margin: '10px 0', padding: '10px', background: '#FFFFFF' }}>
                         <List.Item.Meta
