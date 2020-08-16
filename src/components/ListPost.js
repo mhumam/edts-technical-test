@@ -70,6 +70,9 @@ class App extends React.Component {
     handleRemovePost = async (id) => {
         let { postList } = this.state;
         postList = await postList.filter(obj => obj.id !== id);
+        /* show notification */
+        Alert.success("Delete data has been successful");
+
         await this.setState({ postList });
     }
 
