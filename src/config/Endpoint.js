@@ -14,13 +14,17 @@ export const api = {
             list: endpoint + "users"
         },
         posts: {
-            list: endpoint + "posts"
+            list    : endpoint + "posts",
+            detail  : endpoint + "posts"
         },
         albums: {
             list: endpoint + "albums"
         },
         photos: {
             list: endpoint + "photos"
+        },
+        comments: {
+            list: endpoint + "comments"
         }
     }
 }
