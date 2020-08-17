@@ -20,11 +20,15 @@
 ## Description:
 
 The application used to display post data from social media is based on data from https://jsonplaceholder.typicode.com/
-This application is built using Reactjs, AntDesign, Javascript, CSS
+This application is built using Reactjs, AntDesign, Javascript, CSS. <a href="https://edts-humam.herokuapp.com/">Demo</a>
 
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+
+Clone Project : 
+
+`git clone https://github.com/mhumam/edts-technical-test.git`
 
 Installation:
 
